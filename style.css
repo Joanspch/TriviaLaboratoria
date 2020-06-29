@@ -1,0 +1,96 @@
+body {
+    margin: 10px;
+    padding: 5px;
+    height: 100%;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background: url("https://i.imgur.com/Z5ONVs6.png");
+  
+  }
+
+.boton { 
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #FD029F;
+    cursor:pointer;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    height: 40px;
+    letter-spacing: 1px;
+    margin: 10px 0px ;
+    outline:none;
+   
+  }
+.boton:hover {
+          background-color: black;
+        }
+p {
+          text-align:center;
+          color: black;
+        }
+.htext{
+  text-align:center;
+}        
+
+.imgcenter{
+  display: block;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  height: 150px;
+}
+.formLogin{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 0px 30px;
+   min-height: cal(100vh - 200px) ;
+}
+.inputc{
+    background-color: transparent;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 5px solid white;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+    text-align:center;
+}
+.cuadro{
+  
+  display:flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.img{
+  width:100px;
+  height:100px;
+}
+.dv{
+  margin-top:85px;
+  text-align:center;
+  font-weight:bold;
+}
+#resultado {
+  background: orange;
+  padding: 14px;
+  top: 500px;
+  bottom: 0px;
+  right: 0px;
+  left: 295px;
+  text-align: center;
+  border-radius:25%;
+  border: 2px solid #000000;
+  font-weight: bold;
+  color: black;
+  font-size: 25px;
+}

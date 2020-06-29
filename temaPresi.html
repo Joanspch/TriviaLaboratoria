@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TRIVIA PRESIDENTE</title>
+    <link rel="shorcut icon" href="https://image.flaticon.com/icons/svg/2151/2151407.svg"/> 
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  
+ <div class="dv">   
+  <strong><p id="resultado"></p></strong></br>
+  <a href= "tema.html">
+        <button class="boton">Escoger otro tema</button>
+  </a> </br>
+
+  <a href= "index.html">
+        <button class="boton">Volver al Inicio</button>
+  </a>
+</div>
+<script>
+
+alert("Escribe la letra de tu respuesta para cada pregunta...");
+
+var cont= 0; 
+var preg1, preg2, preg3;
+
+preg1 = prompt("Quién fue el primer presidente del Perú? \n \n A) José de la Riva Aguero \n \n B) Don José de San Martín \n \n C) Andrés de Santa Cruz");
+		if (preg1 === "A" || preg1 ==="A)" || preg1 ==="a" || preg1 ==="a)") 
+    { 
+      cont++;
+      } 
+preg2 = prompt("Qué presidente abolió la esclavitud en el Perú? \n \n A) José de la Riva Aguero \n \n B) Don José de San Martín \n \n C) Ramón Castilla");
+if (preg2 === "C" || preg2 ==="C)" || preg2 ==="c" || preg2 ==="c)") 
+{ 
+  cont ++;
+  } 
+preg3 = prompt("Quién es el presidente actual de Perú?. \n \n A) Pedro Pablo Kuczynski \n \n B) Martín Vizcarra \n \n C) Ramón Castilla");
+if (preg3 === "B" || preg3 ==="B)" || preg3 ==="b" || preg3 ==="b)") 
+{ 
+  cont++;
+  } 
+if (cont === 3) {
+   resultado.innerHTML = "¡Excelente! ¡Haz respondido todas las preguntas correctamente!"
+  ;
+} else if (cont === 0){
+    resultado.innerHTML = "¡Uy! No le acertaste a ninguna pregunta...¡Pero vuelve a intentarlo, sabemos que lo harás mejor!"
+  ;
+} else {
+    resultado.innerHTML = "¡Uy! Sólo acertaste en " + cont + " preguntas. Vuelve a intentarlo, ¡sabemos que lo harás mejor!"
+}
+
+  </script>
+  </body>
+</html>
+
